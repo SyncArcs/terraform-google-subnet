@@ -1,5 +1,5 @@
 provider "google" {
-  project = "soy-smile-435017-c5"
+  project = "testing-gcp-sys"
   region  = "asia-northeast1"
   zone    = "asia-northeast1-a"
 }
@@ -13,6 +13,7 @@ module "vpc" {
   environment                               = "test"
   routing_mode                              = "REGIONAL"
   network_firewall_policy_enforcement_order = "AFTER_CLASSIC_FIREWALL"
+
 }
 
 #####==============================================================================
